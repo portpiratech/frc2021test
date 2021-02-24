@@ -4,11 +4,21 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.Constants;
 
 public class TestSubsystem extends SubsystemBase {
   /** Creates a new TestSubsystem. */
-  public TestSubsystem() {}
+  private TalonSRX testMotor;
 
-  
+  public TestSubsystem() {
+    testMotor = new TalonSRX(Constants.testMotorID);
+  }
+
+  public void turn(double speed){
+    testMotor.set(ControlMode.PercentOutput, speed);
+  }
 }

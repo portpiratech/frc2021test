@@ -15,4 +15,6 @@ package frc.robot;
 public final class Constants {
     public static int driverControllerId = 0;
     public static int operatorControllerId = 1;
+
+    public static int testMotorID = 11;
 }
