@@ -17,4 +17,6 @@ public final class Constants {
     public static int operatorControllerId = 1;
 
     public static int testMotorID = 11;
+
+    public static int testMotorID2 = 10;
 }
