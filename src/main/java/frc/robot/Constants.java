@@ -18,5 +18,5 @@ public final class Constants {
 
     public static int testMotorID = 11;
 
-    public static int testMotorID2 = 10;
+    public static int testMotorID2 = 12;
 }
