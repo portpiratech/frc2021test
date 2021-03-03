@@ -11,6 +11,7 @@ public class JoystickCommand extends CommandBase {
   /** Creates a new JoystickCommand. */
   public JoystickCommand() {
     // Use addRequirements() here to declare subsystem dependencies.
+    addRequirements(RobotContainer.joystickSubsystem);
   }
 
   // Called when the command is initially scheduled.
